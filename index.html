@@ -19,9 +19,12 @@
 </div>
 
 <footer>
-&copy; 2026 <a href="https://onelevel-studio.github.io">OneLevel Studio</a>. Tous droits réservés.
+&copy; <span id="year">2026</span> <a href="https://onelevel-studio.github.io">OneLevel Studio</a>. Tous droits réservés.
 </footer>
 
 <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
